@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr 10 19:29:14 2024
+Created: Wed Apr 10 19:29:14 2024
 Author: w'm'h001 (Python 3.8)
 
 Description:
