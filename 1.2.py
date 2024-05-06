@@ -134,7 +134,7 @@ print(p)
 #     numpy.ndarray实例，返回经过广播产生的numpy.ndarray实例对应位置相除产生的
 #     numpy.ndarray实例
 # 该函数支持除零运算，运算结果为模块numpy定义的numpy.float64类型的常量inf或-inf，表示正
-#     无穷或负无穷。但进行除零运算会在程序执行结束后在终端打印一个警告
+#     无穷或负无穷。但进行除零运算会在终端打印一个警告
 
 # numpy的广播机制：
 # 辅助概念：numpy.ndarray实例形状：numpy.ndarray实例的维数和每个维度的长度，用一维元组表
