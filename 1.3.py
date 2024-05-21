@@ -41,9 +41,9 @@ print(numpy.lookfor("sqrt"))
 #     dtype=: 仅限关键字实参 | None,
 #     subok=: 仅限关键字实参 | True)
 # 参数x为数字且参数out为None时，返回对其进行开平方产生的浮点数；参数x为集合或参数out不为
-#     None时，对其每个位置的元素进行开平方，产生的浮点数组成numpy.ndarray实例，每个算术平
-#     方根在numpy.ndarray实例的位置与其被开方数在参数x中的位置相同，返回该numpy.ndarray
-#     实例依参数out进行广播后的numpy.ndarray实例
+#     None时，对参数x或其每个位置的元素进行开平方，产生的浮点数组成numpy.ndarray实例，每
+#     个算术平方根在numpy.ndarray实例的位置与其被开方数在参数x中的位置相同，返回该
+#     numpy.ndarray实例依参数out进行广播后的numpy.ndarray实例并将其存储在参数out中
 print(numpy.sqrt(2))
 
 n1 = [[0, 1, 2], [3, 4, 5]]
@@ -54,6 +54,7 @@ print(numpy.sqrt(n2))
 print(type(numpy.sqrt(n2)))
 
 a = numpy.zeros(2)
+print(a)
 b = numpy.sqrt([2, 3], a)
 print(a)
 print(b)
@@ -64,7 +65,7 @@ print(b)
 
 # from 模块名 import *
 # 导入模块中的所有函数
-# 可能导致不同模块的同名函数名字冲突，不建议频繁使用
+# 可能导致同名函数名字冲突，不建议频繁使用
 from numpy import *
 
 # 函数名(参数列表)
