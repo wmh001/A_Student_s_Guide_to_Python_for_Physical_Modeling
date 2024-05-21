@@ -5,7 +5,9 @@ Author: w'm'h001 (Python 3.8)
 
 Description:
 """
+
 import numpy as np
+
 # 1.4 Python表达式
 
 # 1.4.1 数字
@@ -33,7 +35,7 @@ print(int(0.8))
 # numpy.pi
 # 模块Numpy定义的常量，表示圆周率
 # Python和Numpy预定义的常量的优先级高于()，如np.pi、np.e、1j
-print(1/(2 * np.pi))
+print(1 / (2 * np.pi))
 
 # Numpy定义的三角函数sin、cos、tan的角度单位为角度制
 
