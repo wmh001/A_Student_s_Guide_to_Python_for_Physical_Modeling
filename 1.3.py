@@ -80,7 +80,8 @@ import numpy as np
 # 调用别名指定的模块内的指定函数
 print(np.sqrt(2))
 
-from numpy import sqrt, exp
+from numpy import exp, sqrt
+
 print(sqrt(2))
 print(exp(2))
 
@@ -103,7 +104,7 @@ print(rng())
 # 1.3.3 Numpy和Pyplot模块
 # Numpy模块提供了生成和分析数据的基本工具
 # Pyplot模块是函数库Matplotlib的子集，提供了可视化数据的工具
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 import numpy as np, matplotlib.pyplot as plt
