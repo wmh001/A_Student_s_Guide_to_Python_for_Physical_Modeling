@@ -41,9 +41,9 @@ print(numpy.lookfor("sqrt"))
 #     dtype=: 仅限关键字实参 | None,
 #     subok=: 仅限关键字实参 | True)
 # 参数x为数字且参数out为None时，返回对其进行开平方产生的浮点数；参数x为集合或参数out不为
-#     None时，对参数x或其每个位置的元素进行开平方，产生的浮点数组成numpy.ndarray实例，每
-#     个算术平方根在numpy.ndarray实例的位置与其被开方数在参数x中的位置相同，返回该
-#     numpy.ndarray实例依参数out进行广播后的numpy.ndarray实例并将其存储在参数out中
+#     None时，对参数x或其每个位置的元素进行开平方，产生的浮点数组成新创建的numpy.ndarray
+#     实例，每个算术平方根在新numpy.ndarray实例的位置与其被开方数在参数x中的位置相同，返
+#     回该numpy.ndarray实例依参数out进行广播后的numpy.ndarray实例并将其存储在参数out中
 print(numpy.sqrt(2))
 
 n1 = [[0, 1, 2], [3, 4, 5]]
@@ -96,9 +96,10 @@ from numpy.random import random as rng
 # 调用已导入并取别名的函数
 
 # numpy.random.random(
-#     size=被返回numpy.ndarray实例的形状<整型数/整型数元组> | None: 不返回
-#         numpy.ndarray实例，返回一个浮点数实例)
-# 返回区间[0.0, 1.0)内的随机浮点数实例或这类浮点数组成的numpy.ndarray实例
+#     size=被返回numpy.ndarray实例的形状<整型数/整型数元组>: 接收整型数参数时，创建长度
+#         为该参数的一维numpy.ndarray实例; 接收整型数元组参数时，创建形状元组为该元组的
+#         numpy.ndarray实例 | None: 不返回numpy.ndarray实例，返回一个浮点数实例)
+# 返回区间[0.0, 1.0)内的随机浮点数实例或新创建的这类浮点数组成的numpy.ndarray实例
 print(rng())
 
 # 1.3.3 Numpy和Pyplot模块
