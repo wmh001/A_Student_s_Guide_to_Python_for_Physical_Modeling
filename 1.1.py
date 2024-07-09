@@ -74,7 +74,7 @@ print("x={}\ny={}".format(x, y))
 
 # 对于np数组变量，使用切片的效果与直接赋值相同，可用copy方法创建原列表的拷贝
 # numpy.ndarray（np数组）实例.copy()
-# 返回与原np数组实例元素相等、顺序相同的新numpy.ndarray实例（原列表的拷贝）
+# 返回新创建的与原np数组实例元素相等、顺序相同的numpy.ndarray实例（原列表的拷贝）
 w = np.zeros(10)
 x = w
 y = x[:]
